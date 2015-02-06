@@ -15,7 +15,7 @@
         <img src="" alt="cute cat" data-bind="click: $parent.incrementCounter, attr: {src: imgSrc}">
 
         <ul data-bind="foreach: nicknames">
-            <li data-bind="text: name"></li>
+            <li data-bind="text: $data"></li>
         </ul>
     </div>
     <script src="js/lib/knockout-3.2.0.js"></script>
