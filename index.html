@@ -6,7 +6,7 @@
 </head>
 <body>
     <ul id="cat-list" data-bind="foreach: catList">
-        <li data-bind="text: name"></li>
+        <li data-bind="click: $parent.changeCat, text: name"></li>
     </ul>
     <div data-bind="with: currentCat" id="cat">
 
